@@ -53,7 +53,7 @@
         <section class="hero section">
             <div class="container">
                 <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="btn-requestservice">Замовити послугу</button>
+                <button type="button" class="btn-requestservice" data-modal-open>Замовити послугу</button>
             </div>
         </section>
 
@@ -347,28 +347,28 @@
                 <ul class="social-list-footer">
                     <li>
                         <a href="" class="social-link-footer">
-                            <svg class="social-icon-footer" width="20px" height="20px">
+                            <svg class="social-icon-footer" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a href="" class="social-link-footer">
-                            <svg class="social-icon-footer" width="20px" height="20px">
+                            <svg class="social-icon-footer" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a href="" class="social-link-footer">
-                            <svg class="social-icon-footer" width="20px" height="20px">
+                            <svg class="social-icon-footer" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a href="" class="social-link-footer">
-                            <svg class="social-icon-footer" width="20px" height="20px">
+                            <svg class="social-icon-footer" width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -377,6 +377,20 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <div class="division-close-btn">
+                <button type="button" class="close-btn" data-modal-close>
+                    <svg class="x-icon" width="11" height="11">
+                        <use href="./images/icons.svg#icon-closebutton-x"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 
 </body>
 
