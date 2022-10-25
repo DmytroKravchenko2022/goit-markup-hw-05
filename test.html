@@ -14,3 +14,35 @@
     </ul>
 </body>
 </html>
+
+<div class="upsliding-window">
+    <p class="text-inwindow">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+        дозволить відвідувачу отримати
+        вичерпні відомості про компанію чи приватну особу.</p>
+</div>
+
+.upsliding-window {
+position: absolute;
+top: 0;
+transform: translateY(100%);
+overflow: hidden;
+width: 370px;
+display: flex;
+flex-wrap: wrap;
+background-color: rgba(33, 150, 243, 0.9);
+}
+
+.text-inwindow {
+margin: 63px 24px;
+font-size: 18px;
+line-height: 1.56;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+
+.boxes:hover .upsliding-window {
+transform: translateY(0);
+overflow: visible;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
